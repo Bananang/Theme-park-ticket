@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  background-color: #ffff;
+}
+
+.body_wrap {
+  position: relative;
+  box-sizing: border-box;
+  height: 100vh;
+  background: url("./img/background.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.body_wrap::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  position: relative;
+  width: 150px;
+  height: auto;
+}
+
+.logo img {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffff;
+}
+
+.hero_section {
+  position: relative;
+  top: 100px;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contents {
+  display: flex;
+  gap: 10px;
+}
+
+.contents span {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffff;
+}
+
+.contents > input {
+  width: 150px;
+  border-width: 0 0 1px;
+  padding: 5px;
+  outline: none;
+  border-bottom: 3px solid #ccc;
+}
+
+.contents > button {
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 3px solid #ccc;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container > .ticket_price {
+  position: relative;
+  width: 400px;
+  height: auto;
+}
+
+.character {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.character img {
+  width: 300px;
+}
+
+dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  width: 450px;
+  height: 420px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #cb356b, #bd3f32);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+dialog > .modal_wrap {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.modal_wrap > .modal_contents > .modal_title {
+  color: #fff;
+  margin: 30px 0 0 5px;
+}
+
+.modal_contents > .input_age {
+  color: #fff;
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+.modal_wrap > .ticket_fee {
+  color: #ffff;
+  font-weight: 800;
+  font-size: 35px;
+  position: absolute;
+  bottom: 86px;
+  margin: 0 auto;
+}
+
+.modal_wrap > .closeBtn {
+  color: #6b6b6b;
+  font-size: 20px;
+  font-weight: 800;
+  border: none;
+  border-radius: 20px;
+  padding: 0 20px;
+  background: #fff;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
