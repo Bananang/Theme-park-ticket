@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테마마크 티켓 요금 안내</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Operator 연습(롯데월드 티켓계산)</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-
-<body>
-  <div class="header">
-    <div class="logo"><img src="./img/lotteWorld_logo.png" alt="logo"></div>
-  </div>
-  <div class="body_wrap">
-    <div class="hero_section">
-      <p class="title">티켓요금</p>
-      <div class="container">
-        <div class="contents">
-          <span>나이:</span>
-          <input class="ageValue" type="text" placeholder="숫자만 입력해주세요.">
-          <button class="submit">입력</button>
+  <body>
+    <div class="header">
+      <div class="logo"><img src="./img/lotteWorld_logo.png" alt="logo" /></div>
+    </div>
+    <div class="body_wrap">
+      <div class="hero_section">
+        <p class="title">티켓요금</p>
+        <div class="container">
+          <div class="contents">
+            <span>나이:</span>
+            <input
+              class="ageValue"
+              type="text"
+              placeholder="숫자만 입력해주세요."
+            />
+            <button class="submit">입력</button>
+          </div>
+          <img
+            class="ticket_price"
+            src="./img/ticketprice.jpg"
+            alt="ticketprice"
+          />
         </div>
-        <img class="ticket_price" src="./img/ticketprice.jpg" alt="ticketprice">
+      </div>
+      <div class="character">
+        <img src="./img/character01.png" alt="character" />
       </div>
     </div>
-    <div class="character">
-      <img src="./img/character01.png" alt="character">
-    </div>
-  </div>
-  <script src="./script.js"></script>
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>
