@@ -12,15 +12,15 @@ document.querySelector(".submit").addEventListener("click", () => {
       ageInput.focus();
     } else {
       if (3 <= age && age <= 13) {
-        person = "어린이";
+        person = "어린이 요금: 47,000원";
       } else if (age <= 19) {
-        person = "청소년";
+        person = "청소년 요금: 54,000원";
       } else if (age < 65) {
-        person = "어른";
+        person = "어른 요금: 62,000원";
       } else {
-        person = "65세 이상이므로 어린이 할인";
+        person = "65세 이상이므로 할인 금액인 어린이 요금 적용되어 47,000원";
       }
-      alert(`입력하신 나이는 ${age}세로 ${person} 요금이 적용됩니다.`);
+      alert(`입력한 나이: ${age}세 \n${person} 입니다.`);
       ageInput.value = null;
       ageInput.focus();
     }
